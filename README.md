@@ -1,6 +1,7 @@
 # MLOps Lab 1
 
-DADS7305, Northeastern University
+DADS7305, Northeastern University  
+
 Jaiyashree Vinaitheertha Kumaravelu
 
 A small calculator module used to practice the basics of a reproducible Python workflow: isolated environments, unit testing with pytest and unittest, and CI through GitHub Actions.
@@ -37,3 +38,5 @@ Both workflows trigger on push to `main`. The pytest workflow writes a JUnit XML
 - Python 3.11 in CI instead of 3.8, which is end of life and not available on current Ubuntu runners.
 - Added `__init__.py` to `src/` and `test/` so imports work the same under pytest, unittest, and CI.
 - Artifact upload uses `if: always()` so the report is kept on failing runs too.
+- Added `fun5` (division), which raises `ZeroDivisionError` when dividing by zero.
+- Added tests for negatives, zero, float comparison, and the divide-by-zero case.
